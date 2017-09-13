@@ -7,6 +7,8 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.math3.primes.Primes;
 import org.joda.time.DateTime;
 import org.joda.time.Interval;
+
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Collection;
 
@@ -88,9 +90,11 @@ public class Main {
         System.out.println("Pilnutinis trukmes laikas: " + interval.toDurationMillis());
     }
 
-
-
-
+    // Sitoje Vietoje baigiasi pirmoji uzduoties dalis
+    int width = 600, height = 600;
+    BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+    ImageGen images = new ImageGen(width, height, img);
+ 
     static void generate_data(int min, int max, PrintWriter writer, PrintWriter printWriter2) throws IOException, ArchiveException {
 
         for (int i = min; i < max; i++) {
@@ -161,7 +165,6 @@ public class Main {
 
         return path.substring(index);
     }
-
 
 
 }
