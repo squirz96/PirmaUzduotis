@@ -12,7 +12,6 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.Collection;
 
-
 public class Main {
 
 
@@ -36,7 +35,9 @@ public class Main {
 
         } catch (Exception ex) {
 
+
         }
+
 
         //endregion
 
@@ -88,13 +89,16 @@ public class Main {
         DateTime ending_point = new DateTime();
         Interval interval = new Interval(starting_point, ending_point);
         System.out.println("Pilnutinis trukmes laikas: " + interval.toDurationMillis());
+        // Sitoje Vietoje baigiasi pirmoji uzduoties dalis
+        Solver equation = new Solver(5, 6, 1);
+        BufferedImage bufferedImage = new BufferedImage(800, 800, BufferedImage.TYPE_4BYTE_ABGR);
+        ImageGen gen = new ImageGen(800, 800, bufferedImage);
+        gen.create_random_image();
+        Downloader d = new Downloader("https://www.moooi.com/sites/default/files/styles/large/public/product-images/random_detail.jpg?itok=ErJveZTY", "man.png");
+
     }
 
-    // Sitoje Vietoje baigiasi pirmoji uzduoties dalis
-    int width = 600, height = 600;
-    BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-    ImageGen images = new ImageGen(width, height, img);
- 
+
     static void generate_data(int min, int max, PrintWriter writer, PrintWriter printWriter2) throws IOException, ArchiveException {
 
         for (int i = min; i < max; i++) {

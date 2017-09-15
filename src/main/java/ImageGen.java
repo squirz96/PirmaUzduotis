@@ -2,6 +2,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+//This is for test purposes
 public class ImageGen {
     private int width, height;
 
@@ -41,9 +42,9 @@ public class ImageGen {
         File f = null;
         for (int i = 0; i < height; i++) {
             for (int k = 0; k < width; k++) {
-                int a = (int) (Math.random() * 256); //alpha
+                int a = (int) (Math.random() * 128); //alpha
                 int r = (int) (Math.random() * 256); //red
-                int g = (int) (Math.random() * 256); //green
+                int g = (int) (Math.random() * 128); //green
                 int b = (int) (Math.random() * 256); //blue
 
                 int p = (a << 24) | (r << 16) | (g << 8) | b; //pixel
@@ -55,7 +56,7 @@ public class ImageGen {
             f = new File("Output.png");
             ImageIO.write(image, "png", f);
         } catch (Exception ex) {
-
         }
     }
+
 }
