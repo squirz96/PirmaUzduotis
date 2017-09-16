@@ -30,11 +30,13 @@ public class Downloader {
             is = new BufferedInputStream(u.openStream());
             dis = new FileOutputStream(file);
             int data = is.read();
+            System.out.println("Downloading file..");
             while (data != -1) {
                 dis.write(data);
                 data = is.read();
-            }
 
+            }
+            System.out.println("Download is finished");
 
         } catch (MalformedURLException mue) {
             System.out.println("Ouch - a MalformedURLException happened.");

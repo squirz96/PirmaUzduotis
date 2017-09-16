@@ -76,10 +76,10 @@ public class Solver {
         if (getD() < 0)
             System.out.println("Kvadratine lygtis sprendimu neturi");
         else if (getD() == 0)
-            System.out.println(getX());
+            System.out.println("Kvadratines lygties sprendinys: " + getX());
         else {
-            System.out.println(getX1());
-            System.out.println(getX2());
+            System.out.println("Kvadratines lygties pirmasis  sprendinys: " + getX1());
+            System.out.println("Kvadratines lygties antrasis sprendinys: " + getX2());
         }
     }
 
