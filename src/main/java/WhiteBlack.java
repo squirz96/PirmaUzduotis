@@ -39,7 +39,7 @@ public class WhiteBlack {
 
             byte[] data1 = new byte[mat1.rows() * mat1.cols() * (int) (mat1.elemSize())];
             mat1.get(0, 0, data1);
-            BufferedImage img1 = new BufferedImage(mat1.cols(), mat1.rows(), BufferedImage.TYPE_BYTE_GRAY);
+            BufferedImage img1 = new BufferedImage(mat1.cols(), mat1.rows(), BufferedImage.TYPE_BYTE_INDEXED);
             img1.getRaster().setDataElements(0, 0, mat1.cols(), mat1.rows(), data1);
             File output = new File("edited" + image);
             ImageIO.write(img1, "jpg", output);

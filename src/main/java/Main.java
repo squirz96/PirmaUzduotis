@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.PrintWriter;
 
+
 public class Main {
 
 
@@ -77,6 +78,12 @@ public class Main {
         File input = new File("man.jpg");
         WhiteBlack whiteBlack = new WhiteBlack(input);
         whiteBlack.make_bw();
+        // Date date = new Date(1960,2,14,5,9);
+        // LocalDate gimimas  =  LocalDate.of(1968,Month.APRIL, 3);
+        // DateTime secondone =  new DateTime(gimimas.getYear());
+        Asmuo petras = new Asmuo("Petras", "Petraitis");
+        //petras.setGimimo_metai(gimimas);
+        petras.printInfo();
         DateTime ending_point = new DateTime();
         Interval interval = new Interval(starting_point, ending_point);
         System.out.println("Programos trukmes laikas: " + interval.toDurationMillis());
