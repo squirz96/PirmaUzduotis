@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>Asmuo</OriginalElement>
+  <OriginalElement>WhiteBlack</OriginalElement>
   <nodes>
     <node x="670.0" y="34.0">Solver</node>
     <node x="221.0" y="88.5">WhiteBlack</node>
-    <node x="397.99999999999994" y="66.5">ImageGen</node>
+    <node x="398.0" y="66.5">ImageGen</node>
     <node x="856.0" y="89.0">Downloader</node>
     <node x="1445.0" y="100.0">Zipper</node>
     <node x="0.0" y="0.0">Asmuo</node>
@@ -27,13 +27,13 @@
       <point x="63.0" y="70.5" />
     </edge>
     <edge source="Main" target="Solver">
-      <point x="-6.035714285714334" y="-47.5" />
-      <point x="746.9642857142857" y="294.0" />
+      <point x="-6.035714285714278" y="-47.5" />
+      <point x="746.9642857142858" y="294.0" />
       <point x="711.5" y="294.0" />
       <point x="-41.5" y="103.0" />
     </edge>
     <edge source="Main" target="Asmuo">
-      <point x="-66.39285714285711" y="-47.5" />
+      <point x="-66.39285714285717" y="-47.5" />
       <point x="686.6071428571429" y="344.0" />
       <point x="150.75" y="344.0" />
       <point x="50.25" y="137.0" />
@@ -57,9 +57,9 @@
       <point x="84.25" y="37.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.7833333333333334" x="457.2553191489361" y="223.14893617021272" />
+  <settings layout="Hierarchic Group" zoom="0.48333333333333334" x="483.344827586207" y="330.0" />
   <SelectedNodes>
-    <node>Asmuo</node>
+    <node>WhiteBlack</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
